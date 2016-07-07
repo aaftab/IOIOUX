@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceScreen android:title="Advanced Function Menu" android:summary="Usb Setup. Hardware Test, IMEI">
+        <PreferenceCategory android:title="Advanced Function Menu" />
+        <PreferenceScreen android:title="Phone Testing Menu" android:summary="Testing menu and device information">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.TestingSettings" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="Phone USB Mode setting" android:summary="Allows changing advanced Usb mode settings">
+            <intent android:targetPackage="com.sec.usbsettings" android:action="android.intent.action.MAIN" android:targetClass="com.sec.usbsettings.USBSettings" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="Phone APN Set up" android:summary="Modify phone access points">
+            <intent android:targetPackage="com.android.settings" android:action="android.settings.APN_SETTINGS" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="Battery Status" android:summary="All the battery information is here">
+            <intent android:targetPackage="com.sec.android.app.factorykeystring" android:action="android.intent.action.MAIN" android:targetClass="com.sec.android.app.status.BatteryStatus" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="Hardware test" android:summary="Here you can test all detected hardware">
+            <intent android:targetPackage="com.sec.android.app.hwmoduletest" android:action="android.provider.Telephony.SECRET_CODE" android:targetClass="com.sec.android.app.hwmoduletest.HwModuleTest" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="IMEI/MEID" android:summary="ViewIMEI/MEID">
+            <intent android:targetPackage="com.sec.android.app.servicemodeapp" android:action="android.intent.action.MAIN" android:targetClass="com.sec.android.app.modemui.activities.ShowIMEI" />
+        </PreferenceScreen>
+    </PreferenceScreen>
+
+
+
+    <PreferenceCategory android:title="SOUND OPTIONS">
+        <PreferenceScreen android:icon="@drawable/dspmanager" android:title="Stock Sound" android:key="script#stocksound" android:summary="YOUR PHONE WILL HOT REBOOT AUTOMATICALLY" />
+        <PreferenceScreen android:icon="@drawable/dspmanager" android:title="High Sound" android:key="script#highsound" android:summary="YOUR PHONE WILL HOT REBOOT AUTOMATICALLY" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="ENABLE - DISABLE 1000 FONTS">
+        <PreferenceScreen android:icon="@drawable/photoreader" android:title="Enable 1000+ Fonts" android:key="script#efonts" android:summary="YOUR PHONE WILL HOT REBOOT AUTOMATICALLY" />
+        <PreferenceScreen android:icon="@drawable/photoreader" android:title="Disable 1000+ Fonts" android:key="script#dfonts" android:summary="YOUR PHONE WILL HOT REBOOT AUTOMATICALLY" />
+    </PreferenceCategory>
+   <PreferenceCategory android:title="BROWSER MAIN PAGE" />
+    <PreferenceScreen android:icon="@drawable/ic_bw" android:title="Reset browser back to stock" android:key="script#delete_browser_data" android:summary="Reset Browser" />
+    <PreferenceCategory android:title="ENABLE DISABLE BOOT SOUND" />
+    <PreferenceScreen android:icon="@drawable/ic_ss" android:title="@string/boot_sounds" android:summary="@string/enable_or_disable_boot_sound">
+        <PreferenceCategory android:title="@string/boot_sounds" />
+        <PreferenceScreen android:title="@string/disable_boot_sounds" android:key="script#disable_boot_sounds" android:summary="@string/restart" />
+        <PreferenceScreen android:title="@string/enable_boot_sounds" android:key="script#enable_boot_sounds" android:summary="@string/restart" />
+    </PreferenceScreen>
+    <PreferenceCategory android:title="VOLUME SLIDER SOUND " />
+    <PreferenceScreen android:icon="@drawable/ic_ss" android:title="Volume Slider Sound" android:summary="Enable or disable slider sound">
+        <PreferenceCategory android:title="YOUR PHONE WILL HOT REBOOT AUTOMATICALLY" />
+        <PreferenceScreen android:title="Disable Volume Slider" android:key="script#diolumeounds" android:summary="Disables volume slider sounds" />
+        <PreferenceScreen android:title="Enable Volume Slider" android:key="script#enablevsounds" android:summary="Enables volume slider sounds" />
+    </PreferenceScreen>
+    <PreferenceCategory android:title="CHARGING SOUND " />
+    <PreferenceScreen android:icon="@drawable/ic_ss" android:title="Charging Sound" android:summary="Enable or disable Charging Sound">
+        <PreferenceCategory android:title="YOUR PHONE WILL HOT REBOOT AUTOMATICALLY" />
+        <PreferenceScreen android:title="Disable Charging Sounds" android:key="script#dichargingsounds" android:summary="Disables all charging sounds" />
+        <PreferenceScreen android:title="Enable Charging Sounds" android:key="script#encharsounds" android:summary="Enables all charging sounds" />
+    </PreferenceScreen>
+    <PreferenceCategory android:title="SCREENSHOT SOUND " />
+    <PreferenceScreen android:icon="@drawable/ic_ss" android:title="Screenshot Sound" android:summary="Enable or disable Screenshot Sound">
+        <PreferenceCategory android:title="YOUR PHONE WILL HOT REBOOT AUTOMATICALLY" />
+        <PreferenceScreen android:title="Disable ScreenShot Sounds" android:key="script#disablescreenshotsound" android:summary="Disables screenshot sound" />
+        <PreferenceScreen android:title="Enable ScreenShot Sounds" android:key="script#enablescreenshotsound" android:summary="Enables screenshot sound" />
+    </PreferenceScreen>
+    <PreferenceCategory android:title="LOW BATTERY WARNING " />
+    <SwitchPreference android:icon="@drawable/ic_ss" android:title="Low Battery Notifications" android:key="battery_notif" android:defaultValue="1" android:summaryOn="Low battery warnings are enabled" android:summaryOff="Low battery warnings are disabled" />
+    <PreferenceCategory android:title="OUTDOOR MODE ENABLED-DISABLED" />
+    <SwitchPreference android:icon="@drawable/ic_ss" android:title="@string/outdoor_mode" android:key="display_outdoor_mode" android:defaultValue="false" android:summaryOn="@string/enabled" android:summaryOff="@string/disabled" />
+    <PreferenceCategory android:title="USB PLUG-UNPLUGGED ENABLED-DISABLED" />
+    <SwitchPreference android:icon="@drawable/ic_ss" android:title="USB Plugged/Unplugged Wake" android:key="no_wake_unplugged" android:defaultValue="true" android:summaryOn="Wake when plugged/unplugged" android:summaryOff="Do not Wake" />
+    <PreferenceCategory android:title="SCREEN PINNING ENABLED-DISABLED" />
+    <SwitchPreference android:icon="@drawable/ic_ss" android:title="Screen Pinning" android:key="lock_to_app_enabled" android:defaultValue="false" android:summaryOn="@string/enabled" android:summaryOff="@string/disabled" />
+</PreferenceScreen>

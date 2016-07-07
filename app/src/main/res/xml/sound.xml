@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="LONG PRESS VOLUME BUTTONS">
+        <SwitchPreference android:icon="@drawable/sound"
+            android:title="Long Press Volume Button Music Control"
+            android:key="volbtn_music_controls"
+            android:defaultValue="false" />
+        <com.wubydax.romcontrol.prefs.MyListPreference
+            android:entries="@array/volbtn_timeout_entries"
+            android:title="Button Delay"
+            android:key="volbtn_timeout"
+            android:summary="%s"
+            android:defaultValue="350"
+            android:dependency="volbtn_music_controls"
+            android:entryValues="@array/volbtn_timeout_values" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

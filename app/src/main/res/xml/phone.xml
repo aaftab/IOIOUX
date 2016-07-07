@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="AUTO CALL RECORD"/>
+        <SwitchPreference android:icon="@drawable/ic_phone_mods" android:title="Incoming auto call record" android:key="auto_call_record_in" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+        <SwitchPreference android:icon="@drawable/ic_phone_mods" android:title="Outgoing auto call record" android:key="auto_call_record_out" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+
+    <PreferenceScreen android:title="Extended Power Menu"  android:summary="Extended Power Menu">
+    <PreferenceCategory android:title="Extended power menu" />
+    <SwitchPreference android:title="Power_off" android:key="power_poweroff" android:defaultValue="true" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <SwitchPreference android:title="Data_mode" android:key="power_data" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <SwitchPreference android:title="Airplane_mode" android:key="power_airplane" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <SwitchPreference android:title="Restart" android:key="power_restart" android:defaultValue="true" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <SwitchPreference android:title="Recovery" android:key="power_recovery" android:defaultValue="true" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <SwitchPreference android:title="Download mode" android:key="power_download" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <SwitchPreference android:title="Torch" android:key="power_torch" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <SwitchPreference android:title="Screen Recorder" android:key="power_record" android:defaultValue="true" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <SwitchPreference android:title="Screenshot" android:key="power_screenshot" android:defaultValue="true" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <SwitchPreference android:title="Emergency Mode" android:key="power_emergency" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+</PreferenceScreen>
+</PreferenceScreen>

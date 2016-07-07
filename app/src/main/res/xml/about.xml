@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Rom Developer" />
+    <PreferenceScreen android:icon="@drawable/ravian" android:title="Ravian29" android:summary="The ROM Dev">
+        <intent android:action="android.intent.action.VIEW" android:data="http://ndroid.io/forums/profile/admin" />
+    </PreferenceScreen>
+    <PreferenceCategory android:title="External Links" />
+    <PreferenceScreen android:icon="@drawable/ndroid" android:title="Development Thread" android:summary="Click to visit the ROM thread">
+        <intent android:action="android.intent.action.VIEW" android:data="http://ndroid.io/forums/thread/ioio-rom-v7-1-for-samsung-galaxy-note-5/" />
+    </PreferenceScreen>
+    <PreferenceScreen android:icon="@drawable/fb" android:title="Facebook Page" android:summary="Like Our Facebook Page">
+        <intent android:action="android.intent.action.VIEW" android:data="https://www.facebook.com/ndroid.io" />
+    </PreferenceScreen>
+    <PreferenceScreen android:icon="@drawable/telegram" android:title="Telegram Group" android:summary="Click to visit and join">
+        <intent android:action="android.intent.action.VIEW" android:data="https://telegram.me/joinchat/ABL5Rj-qrj93NgSPnx4jbA" />
+    </PreferenceScreen>
+    <PreferenceCategory android:title="Support" />
+    <PreferenceScreen android:icon="@drawable/paypal" android:title="Donate ME" android:summary="Keep the Project Alive">
+        <intent android:action="android.intent.action.VIEW" android:data="https://paypal.me/aaftab" />
+    </PreferenceScreen>
+</PreferenceScreen>
